@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Rosario&display=swap');
+
+/* Main containers for all pages */
+.about-div, .records-div, .game-div {
+  text-align: center;
+  background-color: #fcf1f4;
+  position: relative;
+  width: 375px;
+  height: 812px;
+  margin: auto;
+  font-family: 'Rosario', sans-serif;
+  border-radius: 6px;
+}
+
+.home-div {
+  text-align: center;
+  background-color: #fcf1f4;
+  position: relative;
+  width: 375px;
+  height: 812px;
+  margin: auto;
+  font-family: 'Rosario', sans-serif;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 6px;
+}
+
+/* Navigation panel */
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: #D77AB3;
+  color:white;
+}
+
+.nav-links{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-left:-40px;
+  list-style: none;
+}
+
+/* NavLink links */
+a {
+  text-decoration: none;
+  color:white;
+  
+}
+
+.current > li {
+  color:yellow;
+  font-size: 1.1rem;
+  }
+
+  
+/* Green line */
+hr {
+  width:75%;
+  text-align:center;
+  height:3px;
+  border-width:0;
+  color:#46BB65;
+  background-color:#46BB65;;
+  border-radius:20%;
+}
+
+/* Login Page */
+.title {
+  font-size: 3.5rem;
+  font-weight: normal;
+}
+
+.username {
+  width: 100%;
+  height: 5vh;
+  border-radius:6px;
+  border:none;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+::placeholder {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.play-btn {
+  width: 100%;
+  height: 5vh;
+  background-color: #D77AB3;
+  color:white;
+  border-radius:6px;
+  border:none;
+  cursor:pointer;
+  box-shadow: 2px 1px 2px gray;
+  margin: 0px 0px 2px 0px;
+
+
+}
+
+.play-btn:active {
+  outline: none;
+  box-shadow: 0 0 0 #D77AB3;
+  margin: 2px 0px 0px 0px;
+
+}
+
+.play-btn:focus {
+  background-color: #D77AB3;
+  filter:none;
+}
+
+.cow {
+  width: 40%;
+}
+
+form {
+  width: 70%;
+  display:flex;
+  flex-direction:column;
+}
+
+.empty {
+  height: 40%;
+}
+
+/* About page */
+.about-div > p{
+  font-size:1.1rem;
+  line-height: 1.25;
+  text-align:justify;
+  padding-left:20px;
+  padding-right:20px;
+}
+
+span {
+  font-weight:bold;
+}
+
+.game-btn {
+  width: 50%;
+  height: 5vh;
+  background-color: #D77AB3;
+  color:white;
+  font-weight: bold;
+  border-radius:6px;
+  border:none;
+  cursor:pointer;
+  box-shadow: 2px 1px 2px gray;
+  margin: 0px 0px 2px 0px;
+
+
+}
+
+.game-btn:active {
+  outline: none;
+  box-shadow: 0 0 0 #D77AB3;
+  margin: 2px 0px 0px 0px;
+
+}
+
+.game-btn:focus {
+  background-color: #D77AB3;
+  filter:none;
+}
+
+/* Game page */
+.number {
+  font-size:5rem;
+}
+
+.button-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  list-style: none;
+}
+
+.button-bar > button {
+  width: 64px;
+  height: 56px;
+  color:white;
+  font-weight: bold;
+  border-radius: 10px;
+  border:none;
+  cursor:pointer;
+}
+
+.button-hi {
+  background-color:#46BB65;
+}
+
+.button-lo {
+  background-color: #7ABAE5;
+}
+
+/* Records page */
+.records-content {
+  display:flex;
+  flex-direction: column;
+}
+
+.records-list {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.names {
+  text-align:left;
+}
+
+.scores {
+  text-align:right;
+}
+
+.records-btn {
+  width: 50%;
+  height: 5vh;
+  background-color:#7ABAE5;
+  color:white;
+  border-radius:6px;
+  border:none;
+  cursor:pointer;
+  box-shadow: 2px 1px 2px gray;
+  margin: 24px 0px 26px 96px;
+}
+
+.records-btn:active {
+  outline: none;
+  box-shadow: 0 0 0 #7ABAE5;
+  margin: 26px 0px 24px 96px;
+
+}
+
+.records-btn:focus {
+  background-color: #7ABAE5;
+  filter:none;
+}
+
+/* Modal */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: .5;
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+}
+
+.modal {
+  z-index: 100;
+  background: white;
+  position: relative;
+  margin: 1.75rem auto;
+  border-radius: 3px;
+  max-width: 300px;
+  padding: 2rem;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-close-button {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  opacity: .3;
+  cursor: pointer;
+  border: none;
+}
+
+.modal > p {
+  text-align:center;
+}
+
+.cow-modal {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 120px;
+  margin-left:64px;
+}
+
+.modal-links {
+  display:flex;
+  flex-direction: column;
+}
+
+.modal-btn1 {
+  width: 50%;
+  height: 5vh;
+  background-color: #D77AB3;
+  color:white;
+  font-weight: bold;
+  border-radius:6px;
+  border:none;
+  cursor:pointer;
+  box-shadow: 2px 1px 2px gray;
+  margin: 0px 0px 12px 76px;
+}
+
+.modal-btn1:active {
+  outline: none;
+  box-shadow: 0 0 0 #D77AB3;
+  margin: 2px 0px 10px 76px;
+
+}
+
+.modal-btn1:focus {
+  background-color: #D77AB3;
+  filter:none;
+}
+
+.modal-btn2 {
+  width: 50%;
+  height: 5vh;
+  background-color: #7ABAE5;
+  color:white;
+  font-weight: bold;
+  border-radius:6px;
+  border:none;
+  cursor:pointer;
+  box-shadow: 2px 1px 2px gray;
+  margin: 0px 0px 12px 76px;
+}
+
+.modal-btn2:active {
+  outline: none;
+  box-shadow: 0 0 0 #7ABAE5;
+  margin: 2px 0px 10px 76px;
+
+}
+
+.modal-btn2:focus {
+  background-color: #7ABAE5;
+  filter:none;
+}
+
+.modal-btn3 {
+  width: 50%;
+  height: 5vh;
+  background-color: #000000;
+  color:white;
+  font-weight: bold;
+  border-radius:6px;
+  border:none;
+  cursor:pointer;
+  box-shadow: 2px 1px 2px gray;
+  margin: 0px 0px 12px 76px;
+}
+
+.modal-btn3:active {
+  outline: none;
+  box-shadow: 0 0 0 #000000;
+  margin: 2px 0px 10px 76px;
+
+}
+
+.modal-btn3:focus {
+  background-color: #000000;
+  filter:none;
+}
